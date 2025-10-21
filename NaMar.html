@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NaMar Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Simple embedded styling for clarity */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #222; color: white; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
+    nav a, .search-cart a, footer a { color: white; margin: 0 10px; text-decoration: none; }
+    .hero { background: url('banner.jpg') center/cover no-repeat; color: white; padding: 5em 2em; text-align: center; }
+    .btn { background: #f04; color: white; padding: 0.5em 1em; border: none; text-decoration: none; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; padding: 2em; }
+    .product-card { border: 1px solid #ccc; padding: 1em; text-align: center; }
+    .product-detail { display: flex; gap: 2em; padding: 2em; }
+    .product-detail img { width: 300px; }
+    .footer-nav { display: flex; gap: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">NaMar</a></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="search-cart">
+      <input type="text" placeholder="Search products...">
+      <a href="login.html">Login</a>
+      <a href="cart.html">🛒(2)</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Fall Collection 2025</h1>
+    <p>Fresh arrivals for the season</p>
+    <a href="shop.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="images/product1.jpg" alt="Sneakers">
+      <h3>Stylish Sneakers</h3>
+      <p>$49.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="images/product2.jpg" alt="Jacket">
+      <h3>Winter Jacket</h3>
+      <p>$89.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Add more product cards -->
+  </section>
+
+  <!-- Product Detail Example -->
+  <section class="product-detail">
+    <img src="images/product1.jpg" alt="Sneakers">
+    <div class="details">
+      <h1>Stylish Sneakers</h1>
+      <p>$49.99</p>
+      <p>Comfortable, durable sneakers perfect for everyday wear.</p>
+      <input type="number" value="1">
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Shopping Cart Page (Simplified Preview) -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <ul>
+      <li>Stylish Sneakers - $49.99 x1 <button>Remove</button></li>
+      <li>Winter Jacket - $89.99 x1 <button>Remove</button></li>
+    </ul>
+    <p>Total: $139.98</p>
+    <button>Checkout</button>
+  </section>
+
+  <!-- Checkout Page (Simplified Preview) -->
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <h3>Shipping Info</h3>
+      <input type="text" placeholder="Full Name">
+      <input type="text" placeholder="Address">
+      <input type="text" placeholder="City">
+      <input type="text" placeholder="ZIP Code">
+      <h3>Payment</h3>
+      <input type="text" placeholder="Card Number">
+      <input type="text" placeholder="Expiry Date">
+      <input type="text" placeholder="CVV">
+      <button>Place Order</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NaMar. All rights reserved.</p>
+    <div class="footer-nav">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Returns</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
